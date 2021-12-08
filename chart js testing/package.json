@@ -1,0 +1,14 @@
+{
+  "name": "chart-js-testing",
+  "version": "1.0.0",
+  "description": "test apexcharts etc",
+  "main": "index.js",
+  "scripts": {
+    "test": "testchart"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apexcharts": "^3.32.0"
+  }
+}
