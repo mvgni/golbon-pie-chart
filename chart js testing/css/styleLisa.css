@@ -93,7 +93,7 @@ nav ul {
 }
 
 nav li {
-  position: absolute;
+  /* position: absolute; */
   -webkit-transition: 2s;
   transition: 2s;
 }
@@ -118,14 +118,46 @@ nav li {
   background: #FACF41;
 }
 
-/* .technology { transform: skewX(45deg); }
-.marketing { transform: rotate(45deg) skewX(45deg); }
-.purchasing { transform: rotate(90deg) skewX(45deg); }
-.resourcelibrary { transform: rotate(135deg) skewX(45deg); }
-.sales { transform: rotate(180deg) skewX(45deg); }
-.peopleplanning { transform: rotate(-135deg) skewX(45deg); }
-.finance { transform: rotate(-90deg) skewX(45deg); }
-.operations { transform: rotate(-45deg) skewX(45deg); } */
+.technology {
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+}
+
+.marketing {
+  -webkit-transform: rotate(45deg) skewX(45deg);
+          transform: rotate(45deg) skewX(45deg);
+}
+
+.purchasing {
+  -webkit-transform: rotate(90deg) skewX(45deg);
+          transform: rotate(90deg) skewX(45deg);
+}
+
+.resourcelibrary {
+  -webkit-transform: rotate(135deg) skewX(45deg);
+          transform: rotate(135deg) skewX(45deg);
+}
+
+.sales {
+  -webkit-transform: rotate(180deg) skewX(45deg);
+          transform: rotate(180deg) skewX(45deg);
+}
+
+.peopleplanning {
+  -webkit-transform: rotate(-135deg) skewX(45deg);
+          transform: rotate(-135deg) skewX(45deg);
+}
+
+.finance {
+  -webkit-transform: rotate(-90deg) skewX(45deg);
+          transform: rotate(-90deg) skewX(45deg);
+}
+
+.operations {
+  -webkit-transform: rotate(-45deg) skewX(45deg);
+          transform: rotate(-45deg) skewX(45deg);
+}
+
 /* .raspberry { transform: rotate(-40deg) skewX(50deg); } */
 .magnifiable {
   height: 100%;
@@ -139,7 +171,8 @@ nav label {
   display: block;
   width: 200%;
   height: 200%;
-  /* transform: skew(-45deg) rotate(-67deg); */
+  -webkit-transform: skew(-45deg);
+          transform: skew(-45deg);
   -webkit-box-shadow: 0 0 .1em black;
           box-shadow: 0 0 .1em black;
   opacity: 1;
@@ -151,6 +184,8 @@ nav label {
   -webkit-transition: 1s;
   transition: 1s;
   text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .slice label:before {
@@ -161,9 +196,9 @@ nav label {
   height: 80%;
   border-radius: 50%;
   /* box-shadow: 0 0 1em rgba(0,0,0,.5); */
-  background-position: 50% 0;
+  /* background-position: 50% 0; */
   background-repeat: no-repeat;
-  background-size: 45% 45%;
+  /* background-size: 45% 45%; */
   opacity: .5;
   content: '';
 }
@@ -190,42 +225,15 @@ nav label {
   /* background: radial-gradient(rgba(0,0,0,.5), transparent 50%); */
 }
 
-.technology label, .otechnology:checked ~ nav .unsel {
-  background: #021D49;
-}
-
-.marketing label, .omarketing:checked ~ nav .unsel {
-  background: #021D49;
-}
-
-.purchasing label, .opurchasing:checked ~ nav .unsel {
-  background: #021D49;
-}
-
-.resourcelibrary label, .oresourcelibrary:checked ~ nav .unsel {
-  background: #021D49;
-}
-
-.sales label, .osales:checked ~ nav .unsel {
-  background: #021D49;
-}
-
-.peopleplanning label, .opeopleplanning:checked ~ nav .unsel {
-  background: #021D49;
-}
-
-.finance label, .ofinance:checked ~ nav .unsel {
-  background: #021D49;
-}
-
-.operations label, .ooperations:checked ~ nav .unsel {
-  background: #021D49;
-}
-
-.raspberry label, .oraspberry:checked ~ nav .unsel {
-  background: #021D49;
-}
-
+/* .technology label, .otechnology:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png'); 	 }
+.marketing label, .omarketing:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png');  }
+.purchasing label, .opurchasing:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png');}
+.resourcelibrary label, .oresourcelibrary:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png');}
+.sales label, .osales:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png');}
+.peopleplanning label, .opeopleplanning:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png');}
+.finance label, .ofinance:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png'); }
+.operations label, .ooperations:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png'); }
+.raspberry label, .oraspberry:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png'); } */
 .technology label:before {
   background-image: url("../assets/img/wheel-first-state.png");
 }
@@ -266,15 +274,51 @@ nav label {
   opacity: 0;
 }
 
-/* .otechnology:checked ~ nav .technology { transform: skewX(45deg) scale(1.05); }
-.omarketing:checked ~ nav .marketing { transform: rotate(45deg) skewX(45deg) scale(1.05); }
-.opurchasing:checked ~ nav .purchasing { transform: rotate(90deg) skewX(45deg) scale(1.05); }
-.oresourcelibrary:checked ~ nav .resourcelibrary { transform: rotate(135deg) skewX(45deg) scale(1.05); }
-.osales:checked ~ nav .sales { transform: rotate(180deg) skewX(45deg) scale(1.05); }
-.opeopleplanning:checked ~ nav .peopleplanning { transform: rotate(-135deg) skewX(45deg) scale(1.05); }
-.ofinance:checked ~ nav .finance { transform: rotate(-90deg) skewX(45deg) scale(1.05); }
-.ooperations:checked ~ nav .operations { transform: rotate(-45deg) skewX(45deg) scale(1.05); }
-.oraspberry:checked ~ nav .raspberry { transform: rotate(-40deg) skewX(45deg) scale(1.05); } */
+.otechnology:checked ~ nav .technology {
+  -webkit-transform: skewX(45deg) scale(1.05);
+          transform: skewX(45deg) scale(1.05);
+}
+
+.omarketing:checked ~ nav .marketing {
+  -webkit-transform: rotate(45deg) skewX(45deg) scale(1.05);
+          transform: rotate(45deg) skewX(45deg) scale(1.05);
+}
+
+.opurchasing:checked ~ nav .purchasing {
+  -webkit-transform: rotate(90deg) skewX(45deg) scale(1.05);
+          transform: rotate(90deg) skewX(45deg) scale(1.05);
+}
+
+.oresourcelibrary:checked ~ nav .resourcelibrary {
+  -webkit-transform: rotate(135deg) skewX(45deg) scale(1.05);
+          transform: rotate(135deg) skewX(45deg) scale(1.05);
+}
+
+.osales:checked ~ nav .sales {
+  -webkit-transform: rotate(180deg) skewX(45deg) scale(1.05);
+          transform: rotate(180deg) skewX(45deg) scale(1.05);
+}
+
+.opeopleplanning:checked ~ nav .peopleplanning {
+  -webkit-transform: rotate(-135deg) skewX(45deg) scale(1.05);
+          transform: rotate(-135deg) skewX(45deg) scale(1.05);
+}
+
+.ofinance:checked ~ nav .finance {
+  -webkit-transform: rotate(-90deg) skewX(45deg) scale(1.05);
+          transform: rotate(-90deg) skewX(45deg) scale(1.05);
+}
+
+.ooperations:checked ~ nav .operations {
+  -webkit-transform: rotate(-45deg) skewX(45deg) scale(1.05);
+          transform: rotate(-45deg) skewX(45deg) scale(1.05);
+}
+
+.oraspberry:checked ~ nav .raspberry {
+  -webkit-transform: rotate(-40deg) skewX(45deg) scale(1.05);
+          transform: rotate(-40deg) skewX(45deg) scale(1.05);
+}
+
 .otechnology:checked ~ nav .technology label,
 .omarketing:checked ~ nav .marketing label,
 .opurchasing:checked ~ nav .purchasing label,

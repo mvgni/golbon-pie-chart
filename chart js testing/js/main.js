@@ -76,4 +76,9 @@ var options = {
       pie.appendChild(wedge);
     }
   })(8);
+
+
+$('.menuopt').click(() => {
+  console.log('click')
+})
   
