@@ -225,45 +225,69 @@ nav label {
   /* background: radial-gradient(rgba(0,0,0,.5), transparent 50%); */
 }
 
-/* .technology label, .otechnology:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png'); 	 }
-.marketing label, .omarketing:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png');  }
-.purchasing label, .opurchasing:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png');}
-.resourcelibrary label, .oresourcelibrary:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png');}
-.sales label, .osales:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png');}
-.peopleplanning label, .opeopleplanning:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png');}
-.finance label, .ofinance:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png'); }
-.operations label, .ooperations:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png'); }
-.raspberry label, .oraspberry:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png'); } */
+.technology label, .otechnology:checked ~ nav .unsel {
+  background-image: url("../assets/img/wheel-1.png");
+}
+
+.marketing label, .omarketing:checked ~ nav .unsel {
+  background-image: url("../assets/img/wheel-8.png");
+}
+
+.purchasing label, .opurchasing:checked ~ nav .unsel {
+  background-image: url("../assets/img/wheel-7.png");
+}
+
+.resourcelibrary label, .oresourcelibrary:checked ~ nav .unsel {
+  background-image: url("../assets/img/wheel-6.png");
+}
+
+.sales label, .osales:checked ~ nav .unsel {
+  background-image: url("../assets/img/wheel-5.png");
+}
+
+.peopleplanning label, .opeopleplanning:checked ~ nav .unsel {
+  background-image: url("../assets/img/wheel-4.png");
+}
+
+.finance label, .ofinance:checked ~ nav .unsel {
+  background-image: url("../assets/img/wheel-3.png");
+}
+
+.operations label, .ooperations:checked ~ nav .unsel {
+  background-image: url("../assets/img/wheel-2.png");
+}
+
+/* .raspberry label, .oraspberry:checked ~ nav .unsel { background-image: url('../assets/img/wheel-2.png'); } */
 .technology label:before {
-  background-image: url("../assets/img/wheel-first-state.png");
+  background: transparent;
 }
 
 .marketing label:before {
-  background-image: url("../assets/img/wheel-first-state.png");
+  background: transparent;
 }
 
 .purchasing label:before {
-  background-image: url("../assets/img/wheel-first-state.png");
+  background: transparent;
 }
 
 .resourcelibrary label:before {
-  background-image: url("../assets/img/wheel-first-state.png");
+  background: transparent;
 }
 
 .sales label:before {
-  background-image: url("../assets/img/wheel-first-state.png");
+  background: transparent;
 }
 
 .peopleplanning label:before {
-  background-image: url("../assets/img/wheel-first-state.png");
+  background: transparent;
 }
 
 .finance label:before {
-  background-image: url("../assets/img/wheel-first-state.png");
+  background: transparent;
 }
 
 .operations label:before {
-  background-image: url("../assets/img/wheel-first-state.png");
+  background: transparent;
 }
 
 .raspberry label:before {
@@ -329,6 +353,7 @@ nav label {
           box-shadow: 0 0 0.45em rgba(0, 0, 0, 0.5);
   opacity: 1;
   color: black;
+  background: #FACF41;
 }
 
 .opeopleplanning:checked ~ nav .peopleplanning label,
@@ -338,6 +363,7 @@ nav label {
           box-shadow: 0 0 0.45em rgba(0, 0, 0, 0.5);
   opacity: 1;
   color: white;
+  background: #FACF41;
 }
 
 @media (min-width: 25em) {

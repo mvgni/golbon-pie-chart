@@ -129,23 +129,23 @@ nav label { cursor: pointer; }
     transform: translate(30%, 35%);
 	/* background: radial-gradient(rgba(0,0,0,.5), transparent 50%); */
 }
-/* .technology label, .otechnology:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png'); 	 }
-.marketing label, .omarketing:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png');  }
-.purchasing label, .opurchasing:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png');}
-.resourcelibrary label, .oresourcelibrary:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png');}
-.sales label, .osales:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png');}
-.peopleplanning label, .opeopleplanning:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png');}
-.finance label, .ofinance:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png'); }
-.operations label, .ooperations:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png'); }
-.raspberry label, .oraspberry:checked ~ nav .unsel { background-image: url('../assets/img/wheel-first-state.png'); } */
-.technology label:before {background-image: url('../assets/img/wheel-first-state.png'); }
-.marketing label:before { background-image: url('../assets/img/wheel-first-state.png'); }
-.purchasing label:before { background-image: url('../assets/img/wheel-first-state.png'); }
-.resourcelibrary label:before { background-image: url('../assets/img/wheel-first-state.png');  }
-.sales label:before { background-image: url('../assets/img/wheel-first-state.png'); }
-.peopleplanning label:before {background-image: url('../assets/img/wheel-first-state.png');  }
-.finance label:before { background-image: url('../assets/img/wheel-first-state.png');  }
-.operations label:before { background-image: url('../assets/img/wheel-first-state.png');  }
+.technology label, .otechnology:checked ~ nav .unsel { background-image: url('../assets/img/wheel-1.png'); 	 }
+.marketing label, .omarketing:checked ~ nav .unsel { background-image: url('../assets/img/wheel-8.png');  }
+.purchasing label, .opurchasing:checked ~ nav .unsel { background-image: url('../assets/img/wheel-7.png');}
+.resourcelibrary label, .oresourcelibrary:checked ~ nav .unsel { background-image: url('../assets/img/wheel-6.png');}
+.sales label, .osales:checked ~ nav .unsel { background-image: url('../assets/img/wheel-5.png');}
+.peopleplanning label, .opeopleplanning:checked ~ nav .unsel { background-image: url('../assets/img/wheel-4.png');}
+.finance label, .ofinance:checked ~ nav .unsel { background-image: url('../assets/img/wheel-3.png'); }
+.operations label, .ooperations:checked ~ nav .unsel { background-image: url('../assets/img/wheel-2.png'); }
+/* .raspberry label, .oraspberry:checked ~ nav .unsel { background-image: url('../assets/img/wheel-2.png'); } */
+.technology label:before { background:transparent; }
+.marketing label:before { background:transparent; }
+.purchasing label:before { background:transparent; }
+.resourcelibrary label:before { background:transparent; }
+.sales label:before { background:transparent; }
+.peopleplanning label:before {background:transparent;  }
+.finance label:before { background:transparent;  }
+.operations label:before { background:transparent;  }
 .raspberry label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Raspberries05.jpg/220px-Raspberries05.jpg); }
 .slice label:hover:after { opacity: 0; }
 .otechnology:checked ~ nav .technology { transform: skewX(45deg) scale(1.05); } 
@@ -165,13 +165,16 @@ nav label { cursor: pointer; }
 .oraspberry:checked ~ nav .raspberry label {
 	box-shadow: 0 0 .45em rgba(0,0,0,.5);
 	opacity: 1; color: black;
+	background:#FACF41;
 }
 .opeopleplanning:checked ~ nav .peopleplanning label , 
 .ofinance:checked ~ nav .finance label, 
 .ooperations:checked ~ nav .operations label {
 	box-shadow: 0 0 .45em rgba(0,0,0,.5);
 	opacity: 1; color: white;
+	background:#FACF41;
 }
+
 @media (min-width: 25em) { .slice label { font-size: 1em; line-height: 2.3; } }
 @media (min-width: 35em) { .slice label { font-weight: 700; line-height: 2.7; } }
   
