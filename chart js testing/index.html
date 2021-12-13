@@ -14,6 +14,7 @@
 
     <!-- <div id="chart"></div> -->
     <!-- <div class="pie"></div> -->
+    <input type='radio' name='opt' id='ooperations' class='menuopt ooperations'>
     <input type='radio' name='opt' id='otechnology' class='menuopt otechnology'>
     <input type='radio' name='opt' id='omarketing' class='menuopt omarketing'>
     <input type='radio' name='opt' id='opurchasing' class='menuopt opurchasing'>
@@ -21,43 +22,42 @@
     <input type='radio' name='opt' id='osales' class='menuopt osales'>
     <input type='radio' name='opt' id='opeopleplanning' class='menuopt opeopleplanning'>
     <input type='radio' name='opt' id='ofinance' class='menuopt ofinance'>
-    <input type='radio' name='opt' id='ooperations' class='menuopt ooperations'>
 <!--     <input type='radio' name='opt' id='oraspberry' class='menuopt oraspberry'>
  -->    <input type='radio' name='opt' id='unsel' class='menuopt' checked>
     <nav>
         <ul class='circle'>
+            <li class='operations dark slice' onclick="popupClick('operations')">
+                    <label for='ooperations' class='circle'>operations</label>
+            </li>
             <li class='technology dark slice'>
-                    <label for='otechnology' class='circle'>Technology</label>
+                    <label for='otechnology' class='circle'>technology</label>
             </li>
             <li class='marketing dark slice'>
-                    <label for='omarketing' class='circle'>Marketing</label>
+                    <label for='omarketing' class='circle'>marketing</label>
             </li>
             <li class='purchasing dark slice'>
-                    <label for='opurchasing' class='circle'>Purchasing</label>
+                    <label for='opurchasing' class='circle'>purchasing</label>
             </li>
             <li class='resourcelibrary dark slice'>
-                    <label for='oresourcelibrary' class='circle'>Resource Library</label>
+                    <label for='oresourcelibrary' class='circle'>resourcelibrary</label>
             </li>
             <li class='sales dark slice'>
-                    <label for='osales' class='circle'>Sales</label>
+                    <label for='osales' class='circle'>sales</label>
             </li>
             <li class='peopleplanning dark slice'>
                     <label for='opeopleplanning' class='circle'>People & Planning</label>
             </li>
             <li class='finance dark slice'>
-                    <label for='ofinance' class='circle'>Finance</label>
-            </li>
-            <li class='operations dark slice'>
-                    <label for='ooperations' class='circle'>Operations</label>
+                    <label for='ofinance' class='circle'>finance</label>
             </li>
             <!-- <li class='raspberry light slice'>
                     <label for='oraspberry' class='circle'>Raspberry</label>
             </li> -->
-            <li class='unsel circle'><label for='unsel'></label></li>
+            <li class='unsel circle'><label for='unsel'><img src="assets/img/g-bg.png" /></label></li>
         </ul>
     </nav>
     
-    
+    <div class="popup"></div>
     
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

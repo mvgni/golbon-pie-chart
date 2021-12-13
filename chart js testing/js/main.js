@@ -78,7 +78,7 @@ var options = {
   })(8);
 
 
-$('.menuopt').click(() => {
-  console.log('click')
-})
+function popupClick(slice) {
+  console.log(slice)
+}
   

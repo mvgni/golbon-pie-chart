@@ -121,14 +121,7 @@ nav label { cursor: pointer; }
 .slice label:hover { opacity: 1; }
 .dark label:hover { color: white; }
 .light label:hover { color: black; }
-.unsel label {
-	display: block;
-	height: 100%;
-    background: url('../assets/img/g.png');
-    background-repeat: no-repeat;
-    transform: translate(30%, 35%);
-	/* background: radial-gradient(rgba(0,0,0,.5), transparent 50%); */
-}
+
 .technology label, .otechnology:checked ~ nav .unsel { background-image: url('../assets/img/wheel-1.png'); 	 }
 .marketing label, .omarketing:checked ~ nav .unsel { background-image: url('../assets/img/wheel-8.png');  }
 .purchasing label, .opurchasing:checked ~ nav .unsel { background-image: url('../assets/img/wheel-7.png');}
@@ -173,6 +166,20 @@ nav label { cursor: pointer; }
 	box-shadow: 0 0 .45em rgba(0,0,0,.5);
 	opacity: 1; color: white;
 	background:#FACF41;
+}
+
+.unsel {
+	display: block;
+	height: 100%;
+    background: url('../assets/img/g.png');
+    background-repeat: no-repeat;
+    /* transform: translate(30%, 35%); */
+	/* background: radial-gradient(rgba(0,0,0,.5), transparent 50%); */
+}
+.unsel label img {
+	position: relative;
+	transform: translate(-50%, -50%);
+	width: 185px;
 }
 
 @media (min-width: 25em) { .slice label { font-size: 1em; line-height: 2.3; } }
