@@ -15,7 +15,7 @@ nav ul {
 	position: relative;
 	padding: 50%;
 	max-width: 0; max-height: 0;
-	box-shadow: 0 0 .5em rgba(0,0,0,.5);
+	/* box-shadow: 0 0 .5em rgba(0,0,0,.5); */
 	list-style: none;
 	background: white;
 }
@@ -50,7 +50,7 @@ nav label { cursor: pointer; }
 	display: block;
 	width: 200%; height: 200%;
 	transform: skew(-45deg)/*  rotate(-67deg) */;
-	box-shadow: 0 0 .1em black;
+	/* box-shadow: 0 0 .1em black; */
 	opacity: 1;
 	color: white;
 	font-size: .8em;
@@ -110,14 +110,14 @@ nav label { cursor: pointer; }
 .oresourcelibrary:checked ~ nav .resourcelibrary label, 
 .osales:checked ~ nav .sales label, 
 .oraspberry:checked ~ nav .raspberry label {
-	box-shadow: 0 0 .45em rgba(0,0,0,.5);
+	/* box-shadow: 0 0 .45em rgba(0,0,0,.5); */
 	opacity: 1; color: black;
 	background:#FACF41;
 }
 .opeopleplanning:checked ~ nav .peopleplanning label , 
 .ofinance:checked ~ nav .finance label, 
 .ooperations:checked ~ nav .operations label {
-	box-shadow: 0 0 .45em rgba(0,0,0,.5);
+	/* box-shadow: 0 0 .45em rgba(0,0,0,.5); */
 	opacity: 1; color: white;
 	background:#FACF41;
 }
