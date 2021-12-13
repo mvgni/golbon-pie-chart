@@ -1,5 +1,5 @@
 
-var options = {
+/* var options = {
     series: [12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5, 12.5],
     chart: {
     width: 800,
@@ -75,10 +75,60 @@ var options = {
       wedge.appendChild(inner);
       pie.appendChild(wedge);
     }
-  })(8);
+  })(8); */
 
-
+$('.popup').hide()
 function popupClick(slice) {
-  console.log(slice)
+  /* let checked = $('input:checked')
+  let arrItem = $(checked).attr('id')
+  console.log(arrItem) */
+  
+  if(slice == 'operations') {
+    $('.popup').show()
+    $('.popup_head').text('operations')
+    $('.popup_subtext').text('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa enim suscipit voluptates adipisci voluptatem labore, dolorem facere eius quae porro.')
+  }
+  else if(slice == 'technology') {
+    $('.popup').show()
+    $('.popup_head').text('technology')
+    $('.popup_subtext').text('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa enim suscipit voluptates adipisci voluptatem labore, dolorem facere eius quae porro.')
+  }
+  else if(slice == 'marketing') {
+    $('.popup').show()
+    $('.popup_head').text('marketing')
+    $('.popup_subtext').text('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa enim suscipit voluptates adipisci voluptatem labore, dolorem facere eius quae porro.')
+  }
+  else if(slice == 'purchasing') {
+    $('.popup').show()
+    $('.popup_head').text('purchasing')
+    $('.popup_subtext').text('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa enim suscipit voluptates adipisci voluptatem labore, dolorem facere eius quae porro.')
+  }
+  else if(slice == 'resourcelibrary') {
+    $('.popup').show()
+    $('.popup_head').text('resource library')
+    $('.popup_subtext').text('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa enim suscipit voluptates adipisci voluptatem labore, dolorem facere eius quae porro.')
+  }
+  else if(slice == 'sales') {
+    $('.popup').show()
+    $('.popup_head').text('sales')
+    $('.popup_subtext').text('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa enim suscipit voluptates adipisci voluptatem labore, dolorem facere eius quae porro.')
+  }
+  else if(slice == 'peopleplanning') {
+    $('.popup').show()
+    $('.popup_head').text('people and planning')
+    $('.popup_subtext').text('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa enim suscipit voluptates adipisci voluptatem labore, dolorem facere eius quae porro.')
+  }
+  else if(slice == 'finance') {
+    $('.popup').show()
+    $('.popup_head').text('finance')
+    $('.popup_subtext').text('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa enim suscipit voluptates adipisci voluptatem labore, dolorem facere eius quae porro.')
+  }
+  else if(slice == 'unsel') {
+    $('.popup').hide()
+    $('.popup_head').text('')
+    $('.popup_subtext').text('')
+  }
+
+  
 }
   

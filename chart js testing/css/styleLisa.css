@@ -1,54 +1,3 @@
-header {
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.pie {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: relative;
-  width: 800px;
-  height: 800px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.pie button,
-.pie button:focus {
-  outline: none;
-  background: url("../assets/img/1.png");
-  border: thin solid white;
-  position: absolute;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  left: 50%;
-  bottom: 50%;
-  padding: 0;
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.pie button:hover,
-.pie button:focus:hover {
-  -webkit-box-shadow: 0px 0px 10px 5px #515151;
-          box-shadow: 0px 0px 10px 5px #515151;
-  z-index: 1;
-}
-
-.pie button .text,
-.pie button:focus .text {
-  position: absolute;
-  bottom: 5px;
-  padding: 0px;
-  color: #333;
-  left: 5px;
-}
-
 /**
  * Circular menu v2
  */
@@ -118,47 +67,46 @@ nav li {
   background: #FACF41;
 }
 
-.technology {
+.operations {
   -webkit-transform: skewX(45deg);
           transform: skewX(45deg);
 }
 
-.marketing {
+.technology {
   -webkit-transform: rotate(45deg) skewX(45deg);
           transform: rotate(45deg) skewX(45deg);
 }
 
-.purchasing {
+.marketing {
   -webkit-transform: rotate(90deg) skewX(45deg);
           transform: rotate(90deg) skewX(45deg);
 }
 
-.resourcelibrary {
+.purchasing {
   -webkit-transform: rotate(135deg) skewX(45deg);
           transform: rotate(135deg) skewX(45deg);
 }
 
-.sales {
+.resourcelibrary {
   -webkit-transform: rotate(180deg) skewX(45deg);
           transform: rotate(180deg) skewX(45deg);
 }
 
-.peopleplanning {
+.sales {
   -webkit-transform: rotate(-135deg) skewX(45deg);
           transform: rotate(-135deg) skewX(45deg);
 }
 
-.finance {
+.peopleplanning {
   -webkit-transform: rotate(-90deg) skewX(45deg);
           transform: rotate(-90deg) skewX(45deg);
 }
 
-.operations {
+.finance {
   -webkit-transform: rotate(-45deg) skewX(45deg);
           transform: rotate(-45deg) skewX(45deg);
 }
 
-/* .raspberry { transform: rotate(-40deg) skewX(50deg); } */
 .magnifiable {
   height: 100%;
 }
@@ -216,38 +164,37 @@ nav label {
 }
 
 .technology label, .otechnology:checked ~ nav .unsel {
-  background-image: url("../assets/img/wheel-1.png");
-}
-
-.marketing label, .omarketing:checked ~ nav .unsel {
   background-image: url("../assets/img/wheel-8.png");
 }
 
-.purchasing label, .opurchasing:checked ~ nav .unsel {
+.marketing label, .omarketing:checked ~ nav .unsel {
   background-image: url("../assets/img/wheel-7.png");
 }
 
-.resourcelibrary label, .oresourcelibrary:checked ~ nav .unsel {
+.purchasing label, .opurchasing:checked ~ nav .unsel {
   background-image: url("../assets/img/wheel-6.png");
 }
 
-.sales label, .osales:checked ~ nav .unsel {
+.resourcelibrary label, .oresourcelibrary:checked ~ nav .unsel {
   background-image: url("../assets/img/wheel-5.png");
 }
 
-.peopleplanning label, .opeopleplanning:checked ~ nav .unsel {
+.sales label, .osales:checked ~ nav .unsel {
   background-image: url("../assets/img/wheel-4.png");
 }
 
-.finance label, .ofinance:checked ~ nav .unsel {
+.peopleplanning label, .opeopleplanning:checked ~ nav .unsel {
   background-image: url("../assets/img/wheel-3.png");
 }
 
-.operations label, .ooperations:checked ~ nav .unsel {
+.finance label, .ofinance:checked ~ nav .unsel {
   background-image: url("../assets/img/wheel-2.png");
 }
 
-/* .raspberry label, .oraspberry:checked ~ nav .unsel { background-image: url('../assets/img/wheel-2.png'); } */
+.operations label, .ooperations:checked ~ nav .unsel {
+  background-image: url("../assets/img/wheel-1.png");
+}
+
 .technology label:before {
   background: transparent;
 }
@@ -288,42 +235,42 @@ nav label {
   opacity: 0;
 }
 
-.otechnology:checked ~ nav .technology {
+.ooperations:checked ~ nav .operations {
   -webkit-transform: skewX(45deg) scale(1.05);
           transform: skewX(45deg) scale(1.05);
 }
 
-.omarketing:checked ~ nav .marketing {
+.otechnology:checked ~ nav .technology {
   -webkit-transform: rotate(45deg) skewX(45deg) scale(1.05);
           transform: rotate(45deg) skewX(45deg) scale(1.05);
 }
 
-.opurchasing:checked ~ nav .purchasing {
+.omarketing:checked ~ nav .marketing {
   -webkit-transform: rotate(90deg) skewX(45deg) scale(1.05);
           transform: rotate(90deg) skewX(45deg) scale(1.05);
 }
 
-.oresourcelibrary:checked ~ nav .resourcelibrary {
+.opurchasing:checked ~ nav .purchasing {
   -webkit-transform: rotate(135deg) skewX(45deg) scale(1.05);
           transform: rotate(135deg) skewX(45deg) scale(1.05);
 }
 
-.osales:checked ~ nav .sales {
+.oresourcelibrary:checked ~ nav .resourcelibrary {
   -webkit-transform: rotate(180deg) skewX(45deg) scale(1.05);
           transform: rotate(180deg) skewX(45deg) scale(1.05);
 }
 
-.opeopleplanning:checked ~ nav .peopleplanning {
+.osales:checked ~ nav .sales {
   -webkit-transform: rotate(-135deg) skewX(45deg) scale(1.05);
           transform: rotate(-135deg) skewX(45deg) scale(1.05);
 }
 
-.ofinance:checked ~ nav .finance {
+.opeopleplanning:checked ~ nav .peopleplanning {
   -webkit-transform: rotate(-90deg) skewX(45deg) scale(1.05);
           transform: rotate(-90deg) skewX(45deg) scale(1.05);
 }
 
-.ooperations:checked ~ nav .operations {
+.ofinance:checked ~ nav .finance {
   -webkit-transform: rotate(-45deg) skewX(45deg) scale(1.05);
           transform: rotate(-45deg) skewX(45deg) scale(1.05);
 }
@@ -370,6 +317,46 @@ nav label {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 185px;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+
+.popup {
+  background: url("../assets/img/popup-bg.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  color: #021d49;
+  text-align: left;
+  width: 40%;
+  margin: 0 auto;
+  padding: 90px;
+  -webkit-animation: fadeIn .3s;
+          animation: fadeIn .3s;
+}
+
+.popup_head {
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-bottom: 10px;
+  -webkit-animation: fadeIn .6s;
+          animation: fadeIn .6s;
+}
+
+.popup_subtext {
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+  font-size: 21px;
 }
 
 @media (min-width: 25em) {

@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="/css/styleLisa.css">
 </head>
 <body>
-    <header>Main</header>
 
     <!-- <div id="chart"></div> -->
     <!-- <div class="pie"></div> -->
@@ -26,38 +25,39 @@
  -->    <input type='radio' name='opt' id='unsel' class='menuopt' checked>
     <nav>
         <ul class='circle'>
+            <li class='technology dark slice' onclick="popupClick('technology')">
+                    <label for='otechnology' class='circle'>technology</label>
+            </li>
+            <li class='marketing dark slice' onclick="popupClick('marketing')">
+                    <label for='omarketing' class='circle'>marketing</label>
+            </li>
+            <li class='purchasing dark slice' onclick="popupClick('purchasing')">
+                    <label for='opurchasing' class='circle'>purchasing</label>
+            </li>
+            <li class='resourcelibrary dark slice' onclick="popupClick('resourcelibrary')">
+                    <label for='oresourcelibrary' class='circle'>resourcelibrary</label>
+            </li>
+            <li class='sales dark slice' onclick="popupClick('sales')">
+                    <label for='osales' class='circle'>sales</label>
+            </li>
+            <li class='peopleplanning dark slice' onclick="popupClick('peopleplanning')">
+                    <label for='opeopleplanning' class='circle'>People & Planning</label>
+            </li>
+            <li class='finance dark slice' onclick="popupClick('finance')">
+                    <label for='ofinance' class='circle'>finance</label>
+            </li>
             <li class='operations dark slice' onclick="popupClick('operations')">
                     <label for='ooperations' class='circle'>operations</label>
             </li>
-            <li class='technology dark slice'>
-                    <label for='otechnology' class='circle'>technology</label>
-            </li>
-            <li class='marketing dark slice'>
-                    <label for='omarketing' class='circle'>marketing</label>
-            </li>
-            <li class='purchasing dark slice'>
-                    <label for='opurchasing' class='circle'>purchasing</label>
-            </li>
-            <li class='resourcelibrary dark slice'>
-                    <label for='oresourcelibrary' class='circle'>resourcelibrary</label>
-            </li>
-            <li class='sales dark slice'>
-                    <label for='osales' class='circle'>sales</label>
-            </li>
-            <li class='peopleplanning dark slice'>
-                    <label for='opeopleplanning' class='circle'>People & Planning</label>
-            </li>
-            <li class='finance dark slice'>
-                    <label for='ofinance' class='circle'>finance</label>
-            </li>
-            <!-- <li class='raspberry light slice'>
-                    <label for='oraspberry' class='circle'>Raspberry</label>
-            </li> -->
-            <li class='unsel circle'><label for='unsel'><img src="assets/img/g-bg.png" /></label></li>
+            
+            <li class='unsel circle' onclick="popupClick('unsel')"><label for='unsel'><img src="assets/img/g-bg.png" /></label></li>
         </ul>
     </nav>
     
-    <div class="popup"></div>
+    <div class="popup">
+            <div class="popup_head"></div>
+            <div class="popup_subtext"></div>
+    </div>
     
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
