@@ -21,7 +21,7 @@ nav ul {
 }
 nav li {
 	/* position: absolute; */
-	transition: 2s;
+	transition: .7s;
 }
 .slice {
 	overflow: hidden;
@@ -57,7 +57,7 @@ nav label { cursor: pointer; }
 	line-height: 1.5;
 	text-align: center;
 	text-decoration: none;
-	transition: 1s;
+	/* transition: .3s; */
     text-transform: uppercase;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -94,7 +94,6 @@ nav label { cursor: pointer; }
 .peopleplanning label:before {background:transparent;  }
 .finance label:before { background:transparent;  }
 .operations label:before { background:transparent;  }
-.raspberry label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Raspberries05.jpg/220px-Raspberries05.jpg); }
 .slice label:hover:after { opacity: 0; }
 .ooperations:checked ~ nav .operations { transform: skewX(45deg) scale(1.05); } 
 .otechnology:checked ~ nav .technology { transform: rotate(45deg) skewX(45deg) scale(1.05); }
