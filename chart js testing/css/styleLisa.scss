@@ -1,171 +1,398 @@
 
-  /**
- * Circular menu v2
- */
-* { margin: 0; padding: 0; }
-html { font: 100%/1.3 Century Gothic, Verdana, sans-serif; }
-body { overflow: hidden; min-width: 20em; }
-.menuopt { display: none; }
-.circle, .circle:before, .circle:after { border-radius: 50%; }
-nav {
-	margin: 5em auto;
-	min-width: 16em; width: 72%; max-width: 40em;
-}
-nav ul {
-	position: relative;
-	padding: 50%;
-	max-width: 0; max-height: 0;
-	/* box-shadow: 0 0 .5em rgba(0,0,0,.5); */
-	list-style: none;
-	background: white;
-}
-nav li {
-	/* position: absolute; */
-	transition: .7s;
-}
-.slice {
-	overflow: hidden;
-	position: absolute;
-	top: 0; left: 0;
-	width: 50%; height: 50%;
-	transform-origin: 100% 100%;
-}
-.unsel {
-	top: 34%; left: 34%;
-	width: 32%; height: 32%;
-	/* box-shadow: 0 0 .75em; */
-	background: #FACF41;
-}
-.operations { transform: skewX(45deg); } 
-.technology { transform: rotate(45deg) skewX(45deg); }
-.marketing { transform: rotate(90deg) skewX(45deg); }
-.purchasing { transform: rotate(135deg) skewX(45deg); }
-.resourcelibrary { transform: rotate(180deg) skewX(45deg); }
-.sales { transform: rotate(-135deg) skewX(45deg); }
-.peopleplanning { transform: rotate(-90deg) skewX(45deg); }
-.finance { transform: rotate(-45deg) skewX(45deg); } 
-.magnifiable { height: 100%; }
-nav label { cursor: pointer; }
-.slice label {
-	display: block;
-	width: 200%; height: 200%;
-	transform: skew(-45deg)/*  rotate(-67deg) */;
-	/* box-shadow: 0 0 .1em black; */
-	opacity: 1;
-	color: white;
-	font-size: .8em;
-	line-height: 1.5;
-	text-align: center;
-	text-decoration: none;
-	/* transition: .3s; */
-    text-transform: uppercase;
-	background-repeat: no-repeat;
-	background-size: 100%;
-}
-.slice label:before {
-	position: absolute;
-	top: 10%; left: 10%;
-	width: 80%; height: 80%;
-	border-radius: 50%;
-	/* box-shadow: 0 0 1em rgba(0,0,0,.5); */
-	/* background-position: 50% 0; */
-	background-repeat: no-repeat;
-	/* background-size: 45% 45%; */
-    opacity: .5;
-	content: '';
-}
-.slice label:hover { opacity: 1; }
-.dark label:hover { color: white; }
-.light label:hover { color: black; }
+		/**
+	 * Circular menu v2
+	 */
+		* {
+		  margin: 0;
+		  padding: 0;
+		}
+	
+		.pie-main {
+		  overflow: hidden;
+		  min-width: 20em;
+		}
+	
+		.menuopt {
+		  display: none;
+		}
+	
+		.circle, .circle:before, .circle:after {
+		  border-radius: 50%;
+		}
+	
+		nav.pienav {
+		  margin: 5em auto;
+		  min-width: 16em;
+		  width: 72%;
+		  max-width: 40em;
+		}
+	
+		nav.pie-nav ul {
+		  position: relative;
+		  padding: 50%;
+		  max-width: 0;
+		  max-height: 0;
+		  /* box-shadow: 0 0 .5em rgba(0,0,0,.5); */
+		  list-style: none;
+		  background: white;
+		}
+	
+		nav.pie-nav li {
+		  /* position: absolute; */
+		  -webkit-transition: .7s;
+		  transition: .7s;
+		}
+	
+		.slice {
+		  overflow: hidden;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 50%;
+		  height: 50%;
+		  -webkit-transform-origin: 100% 100%;
+				  transform-origin: 100% 100%;
+		}
+	
+		.unsel {
+		  top: 34%;
+		  left: 34%;
+		  width: 32%;
+		  height: 32%;
+		  /* box-shadow: 0 0 .75em; */
+		  background: #FACF41;
+		}
+	
+		.operations {
+		  -webkit-transform: skewX(45deg);
+				  transform: skewX(45deg);
+		}
+	
+		.technology {
+		  -webkit-transform: rotate(45deg) skewX(45deg);
+				  transform: rotate(45deg) skewX(45deg);
+		}
+	
+		.marketing {
+		  -webkit-transform: rotate(90deg) skewX(45deg);
+				  transform: rotate(90deg) skewX(45deg);
+		}
+	
+		.purchasing {
+		  -webkit-transform: rotate(135deg) skewX(45deg);
+				  transform: rotate(135deg) skewX(45deg);
+		}
+	
+		.resourcelibrary {
+		  -webkit-transform: rotate(180deg) skewX(45deg);
+				  transform: rotate(180deg) skewX(45deg);
+		}
+	
+		.sales {
+		  -webkit-transform: rotate(-135deg) skewX(45deg);
+				  transform: rotate(-135deg) skewX(45deg);
+		}
+	
+		.peopleplanning {
+		  -webkit-transform: rotate(-90deg) skewX(45deg);
+				  transform: rotate(-90deg) skewX(45deg);
+		}
+	
+		.finance {
+		  -webkit-transform: rotate(-45deg) skewX(45deg);
+				  transform: rotate(-45deg) skewX(45deg);
+		}
+	
+		.magnifiable {
+		  height: 100%;
+		}
+	
+		nav.pie-nav label {
+		  cursor: pointer;
+		}
+	
+		.slice label {
+		  display: block;
+		  width: 200%;
+		  height: 200%;
+		  -webkit-transform: skew(-45deg);
+				  transform: skew(-45deg);
+		  /* box-shadow: 0 0 .1em black; */
+		  opacity: 1;
+		  color: white;
+		  font-size: .8em;
+		  line-height: 1.5;
+		  text-align: center;
+		  text-decoration: none;
+		  /* transition: .3s; */
+		  text-transform: uppercase;
+		  background-repeat: no-repeat;
+		  background-size: 100%;
+		}
+	
+		.slice label:before {
+		  position: absolute;
+		  top: 10%;
+		  left: 10%;
+		  width: 80%;
+		  height: 80%;
+		  border-radius: 50%;
+		  /* box-shadow: 0 0 1em rgba(0,0,0,.5); */
+		  /* background-position: 50% 0; */
+		  background-repeat: no-repeat;
+		  /* background-size: 45% 45%; */
+		  opacity: .5;
+		  content: '';
+		}
+	
+		.slice label:hover {
+		  opacity: 1;
+		}
+		.slice:hover {
+			opacity: .7;
+		}
+	
+		.dark label:hover {
+		  color: white;
+		}
+	
+		.light label:hover {
+		  color: black;
+		}
+	
+		.technology label, .otechnology:checked ~ nav .unsel {
+		  background-image: url("/wp-content/uploads/2021/12/wheel-8.png");
+		}
+	
+		.marketing label, .omarketing:checked ~ nav .unsel {
+		  background-image: url("/wp-content/uploads/2021/12/wheel-7.png");
+		}
+	
+		.purchasing label, .opurchasing:checked ~ nav .unsel {
+		  background-image: url("/wp-content/uploads/2021/12/wheel-6.png");
+		}
+	
+		.resourcelibrary label, .oresourcelibrary:checked ~ nav .unsel {
+		  background-image: url("/wp-content/uploads/2021/12/wheel-5.png");
+		}
+	
+		.sales label, .osales:checked ~ nav .unsel {
+		  background-image: url("/wp-content/uploads/2021/12/wheel-4.png");
+		}
+	
+		.peopleplanning label, .opeopleplanning:checked ~ nav .unsel {
+		  background-image: url("/wp-content/uploads/2021/12/wheel-3.png");
+		}
+	
+		.finance label, .ofinance:checked ~ nav .unsel {
+		  background-image: url("/wp-content/uploads/2021/12/wheel-2.png");
+		}
+	
+		.operations label, .ooperations:checked ~ nav .unsel {
+		  background-image: url("/wp-content/uploads/2021/12/wheel-1.png");
+		}
+	
+		.technology label:before {
+		  background: transparent;
+		}
+	
+		.marketing label:before {
+		  background: transparent;
+		}
+	
+		.purchasing label:before {
+		  background: transparent;
+		}
+	
+		.resourcelibrary label:before {
+		  background: transparent;
+		}
+	
+		.sales label:before {
+		  background: transparent;
+		}
+	
+		.peopleplanning label:before {
+		  background: transparent;
+		}
+	
+		.finance label:before {
+		  background: transparent;
+		}
+	
+		.operations label:before {
+		  background: transparent;
+		}
+	
+		.slice label:hover:after {
+		  opacity: 0;
+		}
+	
+		/*.ooperations:checked ~ nav .operations {
+		  -webkit-transform: skewX(45deg) scale(1.05);
+				  transform: skewX(45deg) scale(1.05);
+		}
+	
+		.otechnology:checked ~ nav .technology {
+		  -webkit-transform: rotate(45deg) skewX(45deg) scale(1.05);
+				  transform: rotate(45deg) skewX(45deg) scale(1.05);
+		}
+	
+		.omarketing:checked ~ nav .marketing {
+		  -webkit-transform: rotate(90deg) skewX(45deg) scale(1.05);
+				  transform: rotate(90deg) skewX(45deg) scale(1.05);
+		}
+	
+		.opurchasing:checked ~ nav .purchasing {
+		  -webkit-transform: rotate(135deg) skewX(45deg) scale(1.05);
+				  transform: rotate(135deg) skewX(45deg) scale(1.05);
+		}
+	
+		.oresourcelibrary:checked ~ nav .resourcelibrary {
+		  -webkit-transform: rotate(180deg) skewX(45deg) scale(1.05);
+				  transform: rotate(180deg) skewX(45deg) scale(1.05);
+		}
+	
+		.osales:checked ~ nav .sales {
+		  -webkit-transform: rotate(-135deg) skewX(45deg) scale(1.05);
+				  transform: rotate(-135deg) skewX(45deg) scale(1.05);
+		}
+	
+		.opeopleplanning:checked ~ nav .peopleplanning {
+		  -webkit-transform: rotate(-90deg) skewX(45deg) scale(1.05);
+				  transform: rotate(-90deg) skewX(45deg) scale(1.05);
+		}
+	
+		.ofinance:checked ~ nav .finance {
+		  -webkit-transform: rotate(-45deg) skewX(45deg) scale(1.05);
+				  transform: rotate(-45deg) skewX(45deg) scale(1.05);
+		}
+	
+		.oraspberry:checked ~ nav .raspberry {
+		  -webkit-transform: rotate(-40deg) skewX(45deg) scale(1.05);
+				  transform: rotate(-40deg) skewX(45deg) scale(1.05);
+		}*/
+	
+		.otechnology:checked ~ nav .technology label,
+		.omarketing:checked ~ nav .marketing label,
+		.opurchasing:checked ~ nav .purchasing label,
+		.oresourcelibrary:checked ~ nav .resourcelibrary label,
+		.osales:checked ~ nav .sales label,
+		.oraspberry:checked ~ nav .raspberry label {
+		  /* box-shadow: 0 0 .45em rgba(0,0,0,.5); */
+		  opacity: .5;
+		  color: black;
+		  /*background: #FACF41;*/
+		}
+	
+		.opeopleplanning:checked ~ nav .peopleplanning label,
+		.ofinance:checked ~ nav .finance label,
+		.ooperations:checked ~ nav .operations label {
+		  /* box-shadow: 0 0 .45em rgba(0,0,0,.5); */
+		  opacity: .5;
+		  color: white;
+		  /*background: #FACF41;*/
+		}
+	
+		.unsel {
+		  display: block;
+		  height: 100%;
+		  background: url("/wp-content/uploads/2021/12/g-bg.png");
+		  background-repeat: no-repeat;
+		  /* transform: translate(30%, 35%); */
+		  /* background: radial-gradient(rgba(0,0,0,.5), transparent 50%); */
+		}
+	
+		.unsel label img {
+		  position: absolute;
+		  -webkit-transform: translate(-50%, -56%);
+				  transform: translate(-50%, -56%);
+		  width: 200px;
+		  box-shadow: -1px 10px 39px -16px rgba(0,0,0,0.75);
+		  -webkit-box-shadow: -1px 10px 39px -16px rgba(0,0,0,0.75);
+		  -moz-box-shadow: -1px 10px 39px -16px rgba(0,0,0,0.75);
+			border-radius: 50%;
+		}
+	
+		@-webkit-keyframes fadeIn {
+		  from {
+			opacity: 0;
+		  }
+		}
+	
+		@keyframes fadeIn {
+		  from {
+			opacity: 0;
+		  }
+		}
+	
+		.popup {
+		  background: url("/wp-content/uploads/2021/12/popup-bg.png");
+		  background-position: left;
+		  background-repeat: no-repeat;
+		  color: #021d49;
+		  text-align: left;
+		  margin: 0 auto;
+		  padding: 7%;
+		  -webkit-animation: fadeIn .3s;
+				  animation: fadeIn .3s;
+		  box-shadow: -1px 10px 39px -16px rgba(0,0,0,0.75);
+		  -webkit-box-shadow: -1px 10px 39px -16px rgba(0,0,0,0.75);
+		  -moz-box-shadow: -1px 10px 39px -16px rgba(0,0,0,0.75);
+		}
+	
+		.popup_head {
+		  font-weight: bolder;
+		  text-transform: uppercase;
+		  font-size: 28px;
+		  margin-bottom: 10px;
+		  -webkit-animation: fadeIn .6s;
+				  animation: fadeIn .6s;
+		}
+	
+		.popup_subtext {
+		  -webkit-animation: fadeIn 1s;
+				  animation: fadeIn 1s;
+		  font-size: 21px;
+		}
+		
+		.popup_btn a {
+		  padding: 10px 25px;
+		  background: #021d49;
+		  color: white;
+		  margin-top: 23px;
+		  display: inline-block;
+		}
+		
+		.popupClose {
+			position: absolute;
+			right: 0;
+			top: 0;
+			font-size: 35px;
+			line-height: 1;
+			padding: 10px 15px;
+			cursor: pointer;
+		}
+	
+		@media (min-width: 25em) {
+		  .slice label {
+			font-size: 1em;
+			line-height: 2.3;
+		  }
+		}
+	
+		@media (min-width: 35em) {
+		  .slice label {
+			font-weight: 700;
+			line-height: 2.7;
+		  }
+		}
+		
+		@media only screen and (max-width: 500px) {
+			.unsel label img {
+				width: 150px;
+			}
+		}
+	
 
-.technology label, .otechnology:checked ~ nav .unsel { background-image: url('../assets/img/wheel-8.png'); 	 }
-.marketing label, .omarketing:checked ~ nav .unsel { background-image: url('../assets/img/wheel-7.png');  }
-.purchasing label, .opurchasing:checked ~ nav .unsel { background-image: url('../assets/img/wheel-6.png');}
-.resourcelibrary label, .oresourcelibrary:checked ~ nav .unsel { background-image: url('../assets/img/wheel-5.png');}
-.sales label, .osales:checked ~ nav .unsel { background-image: url('../assets/img/wheel-4.png');}
-.peopleplanning label, .opeopleplanning:checked ~ nav .unsel { background-image: url('../assets/img/wheel-3.png');}
-.finance label, .ofinance:checked ~ nav .unsel { background-image: url('../assets/img/wheel-2.png'); }
-.operations label, .ooperations:checked ~ nav .unsel { background-image: url('../assets/img/wheel-1.png'); }
-.technology label:before { background:transparent; }
-.marketing label:before { background:transparent; }
-.purchasing label:before { background:transparent; }
-.resourcelibrary label:before { background:transparent; }
-.sales label:before { background:transparent; }
-.peopleplanning label:before {background:transparent;  }
-.finance label:before { background:transparent;  }
-.operations label:before { background:transparent;  }
-.slice label:hover:after { opacity: 0; }
-.ooperations:checked ~ nav .operations { transform: skewX(45deg) scale(1.05); } 
-.otechnology:checked ~ nav .technology { transform: rotate(45deg) skewX(45deg) scale(1.05); }
-.omarketing:checked ~ nav .marketing { transform: rotate(90deg) skewX(45deg) scale(1.05); }
-.opurchasing:checked ~ nav .purchasing { transform: rotate(135deg) skewX(45deg) scale(1.05); }
-.oresourcelibrary:checked ~ nav .resourcelibrary { transform: rotate(180deg) skewX(45deg) scale(1.05); }
-.osales:checked ~ nav .sales { transform: rotate(-135deg) skewX(45deg) scale(1.05); }
-.opeopleplanning:checked ~ nav .peopleplanning { transform: rotate(-90deg) skewX(45deg) scale(1.05); }
-.ofinance:checked ~ nav .finance { transform: rotate(-45deg) skewX(45deg) scale(1.05); }
-.oraspberry:checked ~ nav .raspberry { transform: rotate(-40deg) skewX(45deg) scale(1.05); } 
-.otechnology:checked ~ nav .technology label, 
-.omarketing:checked ~ nav .marketing label, 
-.opurchasing:checked ~ nav .purchasing label, 
-.oresourcelibrary:checked ~ nav .resourcelibrary label, 
-.osales:checked ~ nav .sales label, 
-.oraspberry:checked ~ nav .raspberry label {
-	/* box-shadow: 0 0 .45em rgba(0,0,0,.5); */
-	opacity: 1; color: black;
-	background:#FACF41;
-}
-.opeopleplanning:checked ~ nav .peopleplanning label , 
-.ofinance:checked ~ nav .finance label, 
-.ooperations:checked ~ nav .operations label {
-	/* box-shadow: 0 0 .45em rgba(0,0,0,.5); */
-	opacity: 1; color: white;
-	background:#FACF41;
-}
-
-.unsel {
-	display: block;
-	height: 100%;
-    background: url('../assets/img/g.png');
-    background-repeat: no-repeat;
-    /* transform: translate(30%, 35%); */
-	/* background: radial-gradient(rgba(0,0,0,.5), transparent 50%); */
-}
-.unsel label img {
-	position: relative;
-	transform: translate(-50%, -50%);
-	width: 185px;
-}
-
-
-@keyframes fadeIn { 
-  from { opacity: 0; } 
-}
-
-.popup {
-    background: url('../assets/img/popup-bg.png');
-	background-position: left;
-	background-repeat: no-repeat;
-    color: #021d49;
-    text-align: left;
-    width: 40%;
-    margin: 0 auto;
-    padding: 90px;
-	animation: fadeIn .3s;
-}
-.popup_head {
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-size: 28px;
-	margin-bottom: 10px;
-	animation: fadeIn .6s;
-}
-.popup_subtext {
-	animation: fadeIn 1s;
-	font-size: 21px;
-}
-
-
-
-@media (min-width: 25em) { .slice label { font-size: 1em; line-height: 2.3; } }
-@media (min-width: 35em) { .slice label { font-weight: 700; line-height: 2.7; } }
-  
+	
